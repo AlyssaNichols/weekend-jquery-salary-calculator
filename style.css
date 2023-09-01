@@ -9,9 +9,23 @@ table, th, td {
 
   .totalCost{
    text-align: right;
+   font-size: 30px;
+   font-weight: bold;
+   padding-top: 20px;
+   padding-right: 20px;
+
+  }
+  #title{
+    font-size: 30px;
+    font-weight: bold;
+
   }
 
   td{
     text-align: center;
   }
+
+li{
+  display: inline
+}
 
