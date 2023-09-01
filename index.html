@@ -9,10 +9,12 @@
     <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
+   <header>
     <h1>Salary Calculator</h1>
+  </header> 
     <h2 id="title">Add Employee</h2>
     <body>
-      <form id ="addEmployeeForm">
+    <form id ="addEmployeeForm">
     <input class = "employeeDetails" id = "firstName" type = "text" placeholder = "First Name"></input>
     <input class = "employeeDetails" id= "lastName" type = "text" placeholder = "Last Name"></input>
     <input class = "employeeDetails" id= "idNumber" type = "number" placeholder = "ID Number"></input>
@@ -20,7 +22,7 @@
     <input class = "employeeDetails" id= "annualSalary" type = "number" placeholder = "Annual Salary"></input>
     <button class = "submitButton" type="button">Submit</button>
     </form> 
-    <div class= "employeeList">EMPLOYEES
+    <div class= "employeeList">Employee List
       <table>
         <thead>
           <tr>
@@ -37,6 +39,6 @@
     </table>
 
     </div>
-    <div class="totalCost">Total Monthly Cost: $ </div>
+    <div class="totalCost">Total Monthly Cost: $<span id="totalDollarAmount">0</span></div>
 </body>
 </html>
