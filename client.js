@@ -16,10 +16,10 @@ function addToTable(){
         const jobTitle = $("#jobTitle").val();
         let annualSalary = $("#annualSalary").val();
 
-        // if(!firstName || !lastName || !idNumber || !jobTitle || !annualSalary){
-        //     alert('Missing input field')
-        //     return;
-        //    }
+        if(!firstName || !lastName || !idNumber || !jobTitle || !annualSalary){
+            alert('Missing input field')
+            return;
+           }
 
         $("#tableBody").append(`      
         <tr>
@@ -31,8 +31,8 @@ function addToTable(){
             <td><button type ="button" class="deleteButton">Delete</button></td>
           </tr>`);
           
-          totalSalary = Math.round(totalSalary + Number(annualSalary));
-          let monthlySalary = totalSalary / 12 ;
+          totalSalary = totalSalary + Number(annualSalary);
+          let monthlySalary = Math.round(totalSalary / 12) ;
           $('#totalDollarAmount').text(monthlySalary);
 
           if (monthlySalary > 20000){
@@ -54,26 +54,12 @@ function addToTable(){
         let annualSalary = $(event.target).closest("tr").find("#salary").text();
         
         totalSalary -= Number(annualSalary);
-        let monthlySalary = totalSalary / 12;
-        console.log(monthlySalary);
+        let monthlySalary = Math.round(totalSalary / 12);
         $("#totalDollarAmount").text(monthlySalary);
-
         if (monthlySalary < 20000){
-        $("#totalDollarAmount").css("background-color", "white");
-            }
+          $("#totalDollarAmount").css("background-color", "white");
+          return true
           }
+        }
 
-    
-
-    // function deleteCohort(event) {
-    //   // Update the global count
-    //   // Walk the DOM: Go from button (event.target) UP to the list-item (.cohort)
-    //   // then search down for the td that has the current cohort count (.current-count)
-    //   // then, grab the text value (number), convert it to a number, subtract
-    //   // that value from the global count, and update the DOM
-    //   const currentCount = $(event.target).closest('.cohort').find('.current-count').text();
-    //   studentCount -= Number(currentCount);
-    //   $('#totalStudents').text(studentCount);
-
-
-    
+  
