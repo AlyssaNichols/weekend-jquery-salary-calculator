@@ -1,31 +1,38 @@
-table, th, td {
-    border: 1px solid;
-  }
+table,
+th,
+td {
+  border: 1px solid;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
+.totalCost {
+  text-align: right;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-right: 250px;
+}
+#title {
+  font-size: 30px;
+  font-weight: bold;
+}
 
-  .totalCost{
-   text-align: right;
-   font-size: 30px;
-   font-weight: bold;
-   padding-top: 20px;
-   padding-right: 20px;
+td {
+  text-align: center;
+}
 
-  }
-  #title{
-    font-size: 30px;
-    font-weight: bold;
-
-  }
-
-  td{
-    text-align: center;
-  }
-
-li{
-  display: inline
+li {
+  display: inline;
 }
 
