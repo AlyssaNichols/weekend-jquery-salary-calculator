@@ -1,42 +1,35 @@
-# Weekend Challenge: jQuery Salary Calculator
+# jQuery Salary Calculator
 Create an application that records employee salaries and adds salaries up to report monthly costs. 
 
-## Topics Covered
-- JavaScript
-- jQuery - Selectors, append, and event handling
+## Description
 
-## Assignment
+- This application records employee salaries and adds up theh salaries to report monthly costs. 
+- The input form collects Employee's first name, last name, ID number, job title, annual salary.
+- The 'Submit' button collects the form information, stores the information to calculate monthly costs, and adds the information to the table below. It will also clear the input fields to input the next employees information.
+- If the total monthly cost exceeds $20,000, the background color of the total monthly cost will turn red.
+- When the employees information is added to the table it will also add a "Delete" button. The delete button removes an employee from the table and updates the total monthly cost amount. If removal of an employee brings the monthly total below $20,000 the background color of red will go away.
 
-The application should have an input form that collects _employee first name, last name, ID number, job title, annual salary_.
 
-A 'Submit' button should collect the form information, store the information to calculate monthly costs, append information to the DOM and clear the input fields. Using the stored information, calculate monthly costs and append this to the to DOM. If the total monthly cost exceeds $20,000, add a red background color to the total monthly cost.
-
-Create a delete button that removes an employee from the DOM. For Base mode, it does **not** need to remove that Employee's salary from the reported total.
-
-### Files Provided
-No files have been provided (just instructions.md and a readme.md). Instead of forking and cloning this repo, please choose "Use This Template" (green button) and name your new repo "weekend-jquery-salary-calculator" and clone down from there. Make sure to commit regularily!
 
 ### Wireframe
 
-![Wireframe](salary-calc-wireframe.png)
+![Monthly cost below $20,000](<Screenshot 2023-10-04 at 7.48.46 AM.png>)
+![Monthly cost above $20,000](<Screenshot 2023-10-04 at 7.48.34 AM.png>)
 
-## Stretch Mode
+### Built With
 
-Add styling or extra functionality that fits with the theme of this assignment.
+ - HTML
+ - CSS
+ - Javascript
+ - jQuery
+ - Git
+ - GitHub
+ - VScode
 
-Once the employee is deleted, update the _Total Monthly Cost_ section on the page to reflect the employee's removal. _HINT:_ You will need to figure out which employee was removed, in order to subtract their salary from the total. Consider using `.text()` as a getter, or look into jQuery's `.data()` function. This is tricky! 
+### Acknowledgement
 
-## Reminder About Modes
+Thanks to [Emerging Digital Academy](http://www.emergingacademy.org) who equipped and helped me to make this application a reality. 
 
-Above, we introduced the concept of levels of difficulty. "Mode" is how we will typically refer to each level. Below is a brief explanation of
+### Support
 
-* what to expect when attempting each mode
-* if they are required or not
-
-Mode | Description
---- | ---
-Base | required
-Stretch | optional, stretches your understanding and may require additional research
-
-## Assignment Submission
-Check in your repo, then turn in your work via the EDA Assignment Portal. As usual, don't hesitate to hit up the Slack channel as needed!
+If you have suggestions or issues, please email me at [alyssa.s.nichols94@gmail.com](mailto:alyssa.s.nichols94@gmail.com)
