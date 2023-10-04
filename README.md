@@ -12,9 +12,10 @@ Create an application that records employee salaries and adds salaries up to rep
 
 
 ### Wireframe
-
-![Monthly cost below $20,000](<Screenshot 2023-10-04 at 7.48.46 AM.png>)
+Monthly cost above $20,000
 ![Monthly cost above $20,000](<Screenshot 2023-10-04 at 7.48.34 AM.png>)
+Monthly cost below $20,000 after deleting an employee
+![Monthly cost below $20,000](<Screenshot 2023-10-04 at 7.48.46 AM.png>)
 
 ### Built With
 
